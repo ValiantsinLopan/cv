@@ -24,6 +24,10 @@ article,aside,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section {
    display: block;
 }
+a {
+    color: #11ABB0;
+    text-decoration: none;
+}
 
 nav {
     background-color: #333;
@@ -132,7 +136,6 @@ ul#nav li a:active { color: #F06000; }
  }
  
  section a, section a:visited  { color: #11ABB0; }
- section a:hover, section a:focus { color: #313131; }
  
  section h1 {
     font: 18px/24px 'Arial', sans-serif;
@@ -168,4 +171,12 @@ ul#nav li a:active { color: #F06000; }
  section .date {
     font: 15px/24px 'opensans-regular', sans-serif;
     margin-top: 6px;
+ }
+ 
+ .work-pic{
+     width: 100%;
+ }
+
+section#works{
+    background: #2B2B2B;
  }
