@@ -1,0 +1,60 @@
+* {
+   box-sizing: border-box;
+}
+body {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    height: 800px;
+    min-height: 500px;
+    
+    background: #161415;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+   display: block;
+}
+
+nav {
+    background-color: #333;
+    font: 12px 'opensans-bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+ ul#nav {
+    min-height: 48px;
+    width: auto;
+    text-align: center;
+}
+
+ul#nav li {
+    position: relative;
+    list-style: none;
+    height: 48px;
+    display: inline-block;
+}
+
+ul#nav li a {
+       display: inline-block;
+       padding: 8px 13px;
+       line-height: 32px;
+        text-decoration: none;
+       text-align: left;
+       color: #fff;
+        transition: color .2s ease-in-out;
+    }
+ul#nav li a:active { color: #F06000; }
