@@ -1,6 +1,7 @@
 * {
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 body {
     max-width: 1024px;
     margin: 0 auto;
@@ -8,7 +9,8 @@ body {
     font-weight: normal;
     font-size: 15px;
     line-height: 30px;
-	color: #838C95;
+    color: #838C95;
+    background: #161415;
 }
 
 header {
@@ -20,10 +22,26 @@ header {
     overflow: hidden;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-   display: block;
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+
+.social {
+    margin: 24px 0;
+    padding: 0;
+    font-size: 30px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+    display: inline-block;
+    text-align: center;
+}
+
+.social li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+}
+
 a {
     color: #11ABB0;
     text-decoration: none;
@@ -42,7 +60,7 @@ nav {
     top: 0;
 }
 
- ul#nav {
+ul#nav {
     min-height: 48px;
     width: auto;
     text-align: center;
@@ -56,39 +74,51 @@ ul#nav li {
 }
 
 ul#nav li a {
-       display: inline-block;
-       padding: 8px 13px;
-       line-height: 32px;
-        text-decoration: none;
-       text-align: left;
-       color: #fff;
-        transition: color .2s ease-in-out;
-    }
-ul#nav li a:active { color: #F06000; }
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+    transition: color .2s ease-in-out;
+}
 
 .row {
     width: auto;
+}
+
+section {
+    background: #fff;
+    padding-top: 96px;
+    padding-bottom: 66px;
+    overflow: hidden;
 }
 
 .row {
     width: 96%;
     max-width: 1024px;
     margin: 0 auto;
- }
+}
 
- .column, .columns {
+.column, .columns {
     position: relative;
     padding: 0 20px;
     min-height: 1px;
     float: left;
- }
- .column.centered, .columns.centered  {
-     float: none;
-     margin: 0 auto;
- }
+}
 
-.row .three       { width: 25%; }
-.row .nine        { width: 75%; }
+.row .three {
+    width: 25%;
+}
+
+.row .nine {
+    width: 75%;
+}
+
+.row .twelve {
+    width: 100%;
+    text-align: center;
+}
 
 #about {
     background: #2B2B2B;
@@ -96,20 +126,23 @@ ul#nav li a:active { color: #F06000; }
     padding-bottom: 66px;
     overflow: hidden;
 }
- 
- #about a, #about a:visited  { color: #fff; }
- #about a:hover, #about a:focus { color: #11ABB0; }
- 
- #about h2 {
+
+#about a:hover, #about a:focus {
+    color: #11ABB0;
+}
+
+#about h2 {
     font: 22px/30px 'Arial', sans-serif;
     color: #fff;
     margin-bottom: 12px;
- }
- #about p {
+}
+
+#about p {
     line-height: 30px;
     color: #7A7A7A;
- }
- #about .profile-pic {
+}
+
+#about .profile-pic {
     position: relative;
     width: 120px;
     height: 120px;
@@ -117,66 +150,71 @@ ul#nav li a:active { color: #F06000; }
     display: block;
     margin-left: auto;
     margin-right: auto;
- }
- #about .contact-details { width: 40%; }
- #about .download {
+}
+
+#about .contact-details {
+    width: 40%;
+}
+
+#about .download {
     width: 58.33333%;
     padding-top: 6px;
- }
- .main-col { padding-right: 5%; };
+}
 
+.main-col {
+    padding-right: 5%;
+}
 
-
- 
- section {
+;
+section#skills {
     background: #fff;
     padding-top: 90px;
-    padding-bottom: 72px;
+    padding-bottom: 60px;
     overflow: hidden;
- }
- 
- section a, section a:visited  { color: #11ABB0; }
- 
- section h1 {
+}
+
+section a, section a:visited {
+    color: #11ABB0;
+}
+
+section h1 {
     font: 18px/24px 'Arial', sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
- }
- section h1 span {
+}
+
+section h1 span {
     border-bottom: 3px solid #11ABB0;
     padding-bottom: 6px;
- }
- section h3 {
+}
+
+section h3 {
     font: 25px/30px 'Arial', sans-serif;
- }
- 
- section .header-col { padding-top: 9px; }
- section .main-col { padding-right: 10%; }
- 
- .education, .work {
+}
+
+section .header-col {
+    padding-top: 9px;
+}
+
+section .main-col {
+    padding-right: 10%;
+}
+
+.education, .work {
     margin-bottom: 48px;
     padding-bottom: 24px;
     border-bottom: 1px solid #E8E8E8;
- }
- section .info {
-    font: 16px/24px 'librebaskerville-italic', serif;
-    color: #6E7881;
-    margin-bottom: 18px;
-    margin-top: 9px;
- }
- section .info span {
-    margin-right: 5px;
-    margin-left: 5px;
- }
- section .date {
-    font: 15px/24px 'opensans-regular', sans-serif;
-    margin-top: 6px;
- }
- 
- .work-pic{
-     width: 100%;
- }
+}
 
-section#works{
-    background: #2B2B2B;
- }
+.work-pic {
+    width: 100%;
+}
+
+footer {
+    padding-top: 48px;
+    margin-bottom: 48px;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    min-height: 100px;
+}
