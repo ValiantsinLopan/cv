@@ -17,9 +17,10 @@ header {
     position: relative;
     height: 600px;
     min-height: 500px;
-    background: #161415;
     background-size: cover;
     overflow: hidden;
+    background: #2B2B2B;
+    padding: 96px 0 66px;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -83,10 +84,6 @@ ul#nav li a {
     transition: color .2s ease-in-out;
 }
 
-.row {
-    width: auto;
-}
-
 section {
     background: #fff;
     padding-top: 96px;
@@ -100,7 +97,7 @@ section {
     margin: 0 auto;
 }
 
-.column, .columns {
+.columns {
     position: relative;
     padding: 0 20px;
     min-height: 1px;
@@ -120,13 +117,6 @@ section {
     text-align: center;
 }
 
-#about {
-    background: #2B2B2B;
-    padding-top: 96px;
-    padding-bottom: 66px;
-    overflow: hidden;
-}
-
 #about a:hover, #about a:focus {
     color: #11ABB0;
 }
@@ -137,28 +127,19 @@ section {
     margin-bottom: 12px;
 }
 
-#about p {
+.address span {
     line-height: 30px;
     color: #7A7A7A;
+    display: block;
 }
 
 #about .profile-pic {
     position: relative;
     width: 120px;
     height: 120px;
-    border-radius: 100%;
+    border-radius: 50%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#about .contact-details {
-    width: 40%;
-}
-
-#about .download {
-    width: 58.33333%;
-    padding-top: 6px;
+    margin: 0 auto;
 }
 
 .main-col {
